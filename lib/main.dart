@@ -6,6 +6,7 @@ void main() {
   runApp(MyApp());
 }
 
+// ignore: public_member_api_docs
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// ignore: public_member_api_docs
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -29,25 +31,26 @@ class MyHomePage extends StatelessWidget {
       // backgroundColor: Color(0xff0E2BA8),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          YMargin(50),
+        children: <Widget>[
+          const YMargin(50),
           ButtonImpl(
-            title: "Button",
-            onTap: null,
+            title: 'Button',
+            // ignore: avoid_print
+            onTap: () => print('hiii'),
           ),
-          YMargin(10),
-          ButtonWithBorderImpl(
+          const YMargin(10),
+          const ButtonWithBorderImpl(
             onTap: null,
-            title: "Button",
+            title: 'Button',
           ),
-          YMargin(10),
-          SearchBar(),
-          YMargin(10),
+          const YMargin(10),
+          const SearchBar(),
+          const YMargin(10),
           LogoPath(),
-          FieldText(),
-          YMargin(10),
+          const FieldText(),
+          const YMargin(10),
           ImageClipRect(),
-          YMargin(10),
+          const YMargin(10),
           LogoPath(),
         ],
       ),
