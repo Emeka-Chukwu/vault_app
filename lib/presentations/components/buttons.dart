@@ -1,16 +1,23 @@
 import 'package:flutter/cupertino.dart';
 import 'package:vault_app/presentations/cores/cores.dart';
 
-///[ButtonImpl(title:"title", onTap:onTap,)] the implementation of the buttom without white
+///[ButtonImpl(title:"title", onTap:onTap,)] the implementation
+///of the buttom without white
 ///border
 class ButtonImpl extends StatelessWidget {
-  final String title;
-  final Function onTap;
-  final double width;
-
+  // ignore: public_member_api_docs
   const ButtonImpl(
       {Key key, @required this.title, @required this.onTap, this.width = 90})
       : super(key: key);
+  // ignore: public_member_api_docs
+  final String title;
+  // ignore: public_member_api_docs
+  final void Function() onTap;
+  // ignore: public_member_api_docs
+  final double width;
+
+  // ignore: public_member_api_docs
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -34,13 +41,16 @@ class ButtonImpl extends StatelessWidget {
   }
 }
 
-///[ButtonWithBorderImpl(title:"title", onTap:onTap,)] the implementation of the buttom without white
+///[ButtonWithBorderImpl(title:"title", onTap:onTap,)] the implementation
+///of the buttom without white
 ///border
 class ButtonWithBorderImpl extends StatelessWidget {
+  // ignore: public_member_api_docs
   final String title;
-  final Function onTap;
+  final void Function() onTap;
   final double width;
 
+  // ignore: public_member_api_docs
   const ButtonWithBorderImpl(
       {Key key, @required this.title, @required this.onTap, this.width = 90})
       : super(key: key);
