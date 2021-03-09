@@ -1,16 +1,37 @@
 # vault_app
 
-A new Flutter application.
+## Components for this projects
 
-## Getting Started
+### Buttonwithwhite border
 
-This project is a starting point for a Flutter application.
+ButtonWithBorderImpl
+{Key key, @required this.title, @required this.onTap, this.width = 90})
 
-A few resources to get you started if this is your first Flutter project:
+### Button
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+ButtonImpl(
+{Key key, @required this.title, @required this.onTap, this.width = 90})
+: super(key: key);
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Search input
+
+search field width can be modified to any width and more attributes can be assigned to them
+const SearchBar({
+Key key,
+this.controller,
+this.onTap,
+this.width = 90,
+}) : super(key: key);
+
+### Field text
+
+    const FieldText({Key key, this.controller, this.width = 90})
+      : super(key: key);
+
+### Logo path
+
+LogoPath();
+
+### Image clippath
+
+const ImageClipRect({Key key, this.width = 10})
